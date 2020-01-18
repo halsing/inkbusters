@@ -1,0 +1,159 @@
+/* First box photo */
+.box-photo{
+    position: relative;
+    width: 100%;
+    max-height: 550px;
+    z-index: 500;
+}
+
+.box-photo_photo{
+    max-height: 550px;
+    width: 100%;
+}
+
+
+.box-photo_photo img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.box-photo_text{
+    z-index: 600;
+    position: absolute;
+    width: 50%;
+    min-height: 424px;
+    max-width: 560px;
+    background-color:var(--color-bg);
+    top: 65px;
+    right: 0;
+    padding: 50px;
+}
+
+/* second box photo */
+
+.sc-box-photo_text{
+    z-index: 600;
+    position: absolute;
+    width: 50%;
+    min-height: 424px;
+    max-width: 560px;
+    background-color:var(--color-bg);
+    top: 65px;
+    left: 0;
+    padding: 50px;
+}
+
+/* uniwersla box text */
+.uni-box_text{
+    color: white;
+}
+
+.uni-box_text h2{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 29px;
+    font-family: 'Montserrat-Bold';
+    line-height: 130%;
+}
+
+.uni-box_text p{
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Montserrat-Light';
+}
+
+.uni-box_text ul{
+    padding-left: 0;
+    padding-top: 10px;
+    list-style-type: none;
+}
+
+.uni-box_text ul li{
+    padding-top: 10px;
+}
+
+.uni-box_text a{
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat-Bold";
+}
+
+.why-us{
+    margin-top: -50px;
+    margin-bottom: 150px;
+    background: var(--color-bg-lt);
+}
+
+.why-us header h3{
+    text-align: center;
+    font-size: 32px;
+    color: var(--color-font);
+    margin-bottom: 60px;
+    font-family: 'Montserrat-Bold';
+}
+
+.why-us article h3{
+    margin-bottom: 10px;
+}
+
+.why-us_line{
+    display: inline-block;
+    height: 1px;
+    background: var(--color-bg);
+    width: 80%;
+}
+
+.why-us_main{
+    padding-top: 250px;
+    padding-bottom: 300px;
+}
+
+.why-us_main p{
+    line-height: 30px;
+    font-size: 16px;
+    font-family: "Montserrat-Light";
+    width: 90%;
+}
+
+/* FAQ */
+.faq{
+    margin-top: -50px;
+    margin-bottom: -150px;
+    background: var(--color-bg-lt);
+}
+
+.faq_main{
+    padding-top: 250px;
+    padding-bottom: 300px;
+}
+
+.faq_main p{
+    line-height: 30px;
+    font-size: 18px;
+    font-family: "Montserrat-Light";
+    width: 100%;
+}
+
+.faq_main header h3{
+    text-align: center;
+    font-size: 32px;
+    color: var(--color-font);
+    margin-bottom: 60px;
+    font-family: 'Montserrat-Bold';
+}
+
+.faq_main article h3{
+    margin-bottom: 10px;
+    color: var(--color-font);
+    font-size: 24px;
+    font-family: 'Montserrat-SemiBold';
+}
+
+.faq_line{
+    display: inline-block;
+    height: 1px;
+    background: var(--color-bg);
+    width: 100%;
+}

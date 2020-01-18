@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}Cennik{% endblock %}
+
+{% block header_title %} Cennik {% endblock %}
+
+{% block main %}
+
+    <div class="container">
+        <section class="row price">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-8">
+                <article class="price-main">
+                    <h2>Laserowe usuwanie tatuażu</h2>
+                    <p>Ceny dotyczą tatuaży czanrych i szarych, przy kolorowych
+                        cena może nieznacznie wzrosnąć</p>
+                        <ul>
+                            <li>
+                                <span class="price-main_price">100zł</span>
+                                <span class="price-main_desc">Kreski/kropki</span>
+                            </li>
+                            <li>
+                                <span class="price-main_price">100-150zł</span>
+                                <span class="price-main_desc">Tatuaż konturowy do 20cm2</span>
+                            </li>
+                            <li>
+                                <span class="price-main_price">150-250zł</span>
+                                <span class="price-main_desc">Tatuaż konturowy, ok. 45cm2 (wizytówka 9/5cm)</span>
+                            </li>
+                            <li>
+                                <span class="price-main_price">250-300zł</span>
+                                <span class="price-main_desc">Większy tatuaż konturowy lub pełny do 60cm2</span>
+                            </li>
+                            <li>
+                                <span class="price-main_price">350-600zł</span>
+                                <span class="price-main_desc">Bardzo duży tatuaż konturowy lub duży pełny</span>
+                            </li>
+                        </ul>
+                </article>
+
+                <article class="price-main">
+                    <h2>Laserowe usuwania makijażu permanentnego</h2>
+                    <p>Ceny dotyczą tatuaży czanrych i szarych, przy kolorowych
+                        cena może nieznacznie wzrosnąć</p>
+                    <ul>
+                        <li>
+                            <span class="price-main_price">150-300zł</span>
+                            <span class="price-main_desc">Brwi</span>
+                        </li>
+                    </ul>
+                </article>
+
+                
+            </div>
+
+            <p class=" col-12 price-discount">Przy zapisie na min. 5 sesji obowiązuje zniżka 15%</p>
+        </section>
+    </div>
+{% endblock %} 

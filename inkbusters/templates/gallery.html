@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Galeria{% endblock %}
+
+{% block header_title %} Galleria {% endblock %}
+
+{% block main %}
+
+<div class="container">
+    <div class="row gallery">
+
+    {% for section in range(1,5) %}
+        <section class="col-12">
+            <div class="row">
+
+                {% for photo in ['before', 'first', 'second'] %}
+                    <div class="col-12 col-md-4 gallery-box">
+                        <div class="gallery-box_image">
+                            <img 
+                            src="{{ url_for('static', filename='images/gallery/' + section|string + '/' + photo + '.jpg' ) }}" 
+                            alt="">
+                        </div>
+                        <span>
+                            {% if photo == 'before' %}
+                                Przed pierwszym zabiegiem
+                            {% elif photo == 'first' %}
+                                Po pierwszym zabiegu
+                            {% else %}
+                                Po drugim zabiegu
+                            {% endif %}
+                        </span>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </section>
+    {% endfor %}
+
+    </div>
+</div>
+
+{% endblock %} 

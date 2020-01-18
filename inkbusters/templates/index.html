@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+
+{% block title %}Strona główna{% endblock %}
+
+{% block header_title %}Laserowe usuwanie tatuaży<br>metodą Q-switch{% endblock %}
+
+{% block main %}
+<div class="container">
+    <section class="row box-photo">
+        <div class="col-md-10 box-photo_photo">
+            <img src="{{ url_for('static', filename='images/other/6.jpg') }}" alt="">
+        </div>
+
+        <article class="box-photo_text uni-box_text">
+            <h2>Nasza oferta</h2>
+            <p></p>
+            <ul>
+                <li>
+                    <img src="" alt="">
+                    <span>Usuwanie tatuażu</span>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <span>Usuwanie makijażu pernamentego</span>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <span>Profesjonalne doradztwo</span>
+                </li>
+            </ul>
+            <a href="{{ url_for('main.pricing') }}"> Zobacz cennik </a>
+        </article>
+    </section>
+</div>
+
+<section class="row why-us rotate">
+    <div class="container"> 
+        <div class="row why-us_main">
+            <header class="col-12 anty-rotate">
+                <h3> Dlaczego my</h3>
+            </header>
+
+            <div class="col-12 anty-rotate">
+                <div class="row">
+                    <article class="col-lg-6 col-xl-3">
+                        <h3>Doświadczenie</h3>
+                        <span class="why-us_line"></span>
+                        <p>
+                            Cały zespół jest złożony z osób posiadajaych od 
+                            wielu lat bezpośredni kontakt ze światem tatuażu, 
+                            piercingu i makijażu pernamentego.  
+                            Wiemy jak usuwać, ponieważ znamy odposzewki proces wykonywania tatuażu.
+                        </p>
+                    </article>
+
+                    <article class="col-lg-6 col-xl-3">
+                        <h3>Fachowy sprzęt</h3>
+                        <span class="why-us_line"></span >
+                        <p>
+                            Pracujemy na laserze Q-switch z najwyżej półki. 
+                            Cechuje się najniższym czasem impulsu oraz bardzo dużej mocy, 
+                            pozwalającej na efektywne usuwanie tatuażu bez najdmiernego uszkodzenia skóry.
+                        </p>
+                    </article>
+
+                    <article class="col-lg-6 col-xl-3">
+                        <h3>Atrakcyjna cena</h3>
+                        <span class="why-us_line"></span>
+                        <p>
+                            Usuwanie nie jest naszym jedynym żródłem dochodu, 
+                            ponieważ cały zaspół zajmuje sie na codzień wykonywaniem 
+                            tatuaży/makijażu pernamentego lub obsługa studia, 
+                            stąd mamy bardzo atrkaycjne ceny za zabiegi.
+                        </p>
+                    </article>
+
+                    <article class="col-lg-6 col-xl-3">
+                        <h3>Profesjonalna obsługa</h3>
+                        <span class="why-us_line"></span>
+                        <p>
+                            Prócz samego zabiegu usuwania dajemy możliwosć porozmiawaina z 
+                            tatuatorami by zaplanować już na samym początku zakrycie 
+                            tatuażu inną pracą w stylistyce, która będzie Ci najbardziej odpowiadać.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- second box photo -->
+<div class="container">
+    <section class="row box-photo">
+        <div class="col-md-2"> </div>
+        <div class="col-md-10 box-photo_photo">
+            <img src="{{ url_for('static', filename='images/other/5.jpg')}}" alt="">
+        </div>
+
+        <article class="sc-box-photo_text uni-box_text">
+            <h2>Profesjonaliści w jednym miejscu</h2>
+            <p> 
+                <strong> Inkbusters </strong> to więcej niż usuwanie laserowe. To zespół ludzi, 
+                którzy na codzień zajmują się wykonywaniem tatuażu, 
+                lub mają bardzo bliski kontakt ze światem modyfikacji ciała. 
+                Już podczas samego zabiegu usuwania metodą Q-switch mamy możliwość 
+                lepszego dobrania parametrów zabiegu znając od podszewki cały proces 
+                wykonywania tatuażu. 
+            </p>
+            <a href="{{ url_for('main.pricing') }}"> Dowiedz się więcej </a>
+        </article>
+    </section>
+</div>
+
+
+<section class="row faq rotate">
+    <div class="container"> 
+        <div class="row faq_main anty-rotate">
+            <header class="col-12 ">
+                <h3> Najczęstsze pytania</h3>
+            </header>
+
+            <!-- article -->
+            {% for question in questions %}
+            <div class="col-12 ">
+                <div class="row">
+                    <div class="display-none display-md-fixed col-md-1 col-lg-2"> </div>
+                    <article class="col-12 col-md-10 col-lg-8">
+                        <h3>{{ question.title }}</h3>
+                        <p>{{ question.content }}</p>
+                        <span class="faq_line"></span>
+                    </article>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+{% endblock %} 

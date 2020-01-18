@@ -1,0 +1,20 @@
+#python files
+*/__pycache__/*
+*.pyc
+
+
+
+#env
+venv_inkbusters/*
+.vscode/*
+.flaskenv
+
+#migrations
+migrations/*
+
+#databases
+*.db
+
+
+#cache
+.webassets-cache

@@ -1,0 +1,89 @@
+section.contact{
+    padding-bottom: 100px;
+}
+
+/* Contact informations */
+.navigate-button{
+    margin-top: 70px;
+}
+
+.contact-info a{
+    padding: 14px 75px;
+    background-color: var(--color-bg-lt);
+    color: var(--color-font);
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.contact-info ul{
+    list-style-type: none;
+    padding-top: 20px;
+    padding-left: 0px;
+}
+
+.contact-info li{
+    padding-top: 15px;
+}
+
+.contact-info_header{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 24px;
+    line-height: 130%;
+    color: var(--color-font);
+}
+
+
+/* contact form */
+.contact-form{
+    width: 100%;
+    padding: 56px;
+    background-color: var(--color-bg-lt);
+}
+
+.contact-form h3{
+    color: var(--color-font);
+    font-family: 'Montserrat-SemiBold';
+    font-size: 32px;
+    margin-top: 0px;
+}
+
+.contact-form_policy{
+    font-family: 'Montserrat-ExLight';
+    padding-top: 10px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+#email, #title, #content{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-bg);
+    font-size: 17px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    width: 90%;
+}
+
+#title, #content{
+    margin-top: 35px;
+}
+
+
+/* contact form button */
+.contact-form_button{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#submit{
+    padding: 14px 75px;
+    border: none;
+    background-color: var(--color-bg);
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}

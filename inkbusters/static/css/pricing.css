@@ -1,0 +1,43 @@
+.price-main{
+    padding-top: 50px;
+
+}
+
+.price-main h2{
+    color: var(--color-font);
+    font-family: 'Montserrat-Bold';
+    font-size: 32px;
+
+}
+
+.price-main p{
+    font-family: 'Montserrat-ExLight';
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+
+.price-main ul{
+    list-style-type: none;
+}
+
+.price-main ul li {
+    padding-top: 15px;
+}
+
+.price-main_price{
+    font-family: 'Montserrat-SemiBold';
+    width: 120px;
+    display:inline-block;
+}
+
+section.price{
+    margin-bottom: 50px;
+}
+
+.price-discount{
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+}

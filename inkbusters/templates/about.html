@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block title %}O nas{% endblock %}
+
+{% block header_title %} O nas {% endblock %}
+
+{% block main %}
+<div class="container">
+    <section class="row box-photo">
+        <div class="col-md-10 box-photo_photo">
+            <img src="https://motorcycleshow.pl/wp-content/uploads/2019/11/1-min.jpg" alt="">
+        </div>
+
+        <article class="box-photo_text uni-box_text">
+            <h2>Nasza oferta</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Deleniti ea dolor sed neque tenetur maiores impedit
+                 odio distinctio molestias facilis nobis,
+                id molestiae at iusto nisi ab odit dolorem! Quia?</p>
+            <a href="{{ url_for('main.pricing') }}"> Zobacz cennik </a>
+        </article>
+    </section>
+</div>
+
+<section class="row team rotate">
+    <div class="container"> 
+        <div class="row team_main">
+            <header class="col-12 anty-rotate">
+                <h3> Nasz zespół </h3>
+            </header>
+
+            <div class="col-12 anty-rotate">
+                <div class="row">
+                    <article class="col-lg-6 col-xl-4">
+                        <img src="{{ url_for('static', filename='images/profile/martyna.jpg')}}" alt="">
+                        <h3>Martyna Gromadowska</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Natus aliquam corrupti aut repellat, dolores temporibus. 
+                            Dicta rem, quasi pariatur cumque minus voluptatibus sint 
+                            et aut id error tempora ea. Excepturi.</p>
+                    </article>
+                    <article class="col-lg-6 col-xl-4">
+                        <img src="{{ url_for('static', filename='images/profile/adrian.jpg')}}" alt="">
+                        <h3>Adrian Borowski</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Natus aliquam corrupti aut repellat, dolores temporibus. 
+                            Dicta rem, quasi pariatur cumque minus voluptatibus sint 
+                            et aut id error tempora ea. Excepturi.</p>
+                    </article>
+                    <article class="col-lg-6 col-xl-4">
+                        <img src="{{ url_for('static', filename='images/profile/klaudia.jpg')}}" alt="">
+                        <h3>Klaudia Tonak</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Natus aliquam corrupti aut repellat, dolores temporibus. 
+                            Dicta rem, quasi pariatur cumque minus voluptatibus sint 
+                            et aut id error tempora ea. Excepturi.</p>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %} 
