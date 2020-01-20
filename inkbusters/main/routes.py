@@ -2,6 +2,7 @@ from flask import render_template, request, Blueprint, flash, redirect, url_for
 
 from inkbusters.main.forms import ContactForm
 from inkbusters.main.faq import FAQ
+from inkbusters.email import email_page
 
 
 main = Blueprint("main", __name__)
@@ -40,6 +41,12 @@ def contact():
             return render_template("contact.html", css_tag=CSS_TAG, form=form)
         else:
             flash("Dziękujemy za wiadomość !")
+            data = {
+                'title': form.title.data,
+                'email': form.email.data,
+                'content': form.content.data
+            }
+            email_page(data)
             return redirect(url_for("main.index"))
 
     elif request.method == "GET":

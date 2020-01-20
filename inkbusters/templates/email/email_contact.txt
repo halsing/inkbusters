@@ -1,0 +1,9 @@
+Email od {{ data.email}}
+
+
+
+Tytuł: {{data.title}}
+
+
+
+{{ data.content }}

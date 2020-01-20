@@ -6,11 +6,13 @@ from flask_migrate import Migrate
 from flask_assets import Bundle, Environment
 from flask_admin.contrib.sqla import ModelView
 from flask_admin import Admin
+from flask_mail import Mail
 
 from inkbusters.config import Config
 
 db = SQLAlchemy()
 migrate = Migrate()
+mail = Mail()
 
 
 css = Bundle(
@@ -34,6 +36,8 @@ def create_app(config_class=Config):
     # init features
     db.init_app(app)
     migrate.init_app(app, db)
+    app.debug = 0
+    mail.init_app(app)
     admin = Admin(app)
 
     # assets
