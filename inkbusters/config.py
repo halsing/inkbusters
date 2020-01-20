@@ -21,6 +21,6 @@ class Config:
     # email
     MAIL_SERVER = os.environ.get("MAIL_SERVER") or config.get("MAIL_SERVER")
     MAIL_PORT = int(os.environ.get("MAIL_PORT") or config.get("MAIL_PORT"))
-    MAIL_USE_TLS = os.environ.get("MAIL_USE_TLS") or config.get("MAIL_USE_TLS")
+    MAIL_USE_TLS = True
     MAIL_USERNAME = os.environ.get("MAIL_USERNAME") or config.get("MAIL_USERNAME")
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD") or config.get("MAIL_PASSWORD")
