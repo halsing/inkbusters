@@ -6,18 +6,22 @@
 
 {% block main %}
 <div class="container">
-    <section class="row box-photo">
-        <div class="col-md-10 box-photo_photo">
-            <img src="https://motorcycleshow.pl/wp-content/uploads/2019/11/1-min.jpg" alt="">
-        </div>
-
-        <article class="box-photo_text uni-box_text">
-            <h2>Nasza oferta</h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Deleniti ea dolor sed neque tenetur maiores impedit
-                 odio distinctio molestias facilis nobis,
-                id molestiae at iusto nisi ab odit dolorem! Quia?</p>
-            <a href="{{ url_for('main.pricing') }}"> Zobacz cennik </a>
+    <section class="row first-box">
+        <article class="col-12">
+            <h2 class="col-12">Troche więcej o nas</h2>
+            <span></span>
+            <p class="col-12"> 
+                <strong> Inkbusters </strong> to skład profesjonalistów, którzy 
+                znając od podszewki cały proces wykonywania tatuażu potrafi doradzić najlepszy sposób zakrycia niechcianych prac.
+                W salonie mają Państwo możliwość wybrania odpowiedniego tatuatora, który po procesie rozjaśniania wzoru przystąpi 
+                do wykonywania covera. Na bierząco zatem  możemy kontrolować przebieg procesu usuwania i 
+                przystąpić do coverowania gdy tylko będzie to możliwe.
+            </p>
+            <p class="col-12">
+                Posiadamy laser o najmniejszym możliwie czasie impulsu wśród laserów Q-switch, a także od bardzo dużej moce. 
+                Wskutek połaczenia tych cech naszego urządzenia, usuwanie tatuażu przebiega wydajniej bez nadmiernego uszkodzenia skóry.
+            </p>
+            <a href="{{ url_for('main.about') }}"> Dowiedz się więcej </a>
         </article>
     </section>
 </div>
@@ -34,26 +38,32 @@
                     <article class="col-lg-6 col-xl-4">
                         <img src="{{ url_for('static', filename='images/profile/martyna.jpg')}}" alt="">
                         <h3>Martyna Gromadowska</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Natus aliquam corrupti aut repellat, dolores temporibus. 
-                            Dicta rem, quasi pariatur cumque minus voluptatibus sint 
-                            et aut id error tempora ea. Excepturi.</p>
+                        <p>Właścicielka studia tatuażu "Pewnie Że Boli Tattoo". 
+                            Od lat związana z tatuatorami i całym światem tatuaż.
+                            Od roku także zajmuje się usuwaniem i z łatwością 
+                            odpowiedniego tatuatora do zakrycia niechcianych prac.
+
+                        </p>
                     </article>
                     <article class="col-lg-6 col-xl-4">
                         <img src="{{ url_for('static', filename='images/profile/adrian.jpg')}}" alt="">
                         <h3>Adrian Borowski</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Natus aliquam corrupti aut repellat, dolores temporibus. 
-                            Dicta rem, quasi pariatur cumque minus voluptatibus sint 
-                            et aut id error tempora ea. Excepturi.</p>
+                        <p>Tatuator z wieloletnim doświadczeniem, od 4 lat pracuje w studiu "Pewnie Że Boli Tattoo".
+                            Od roku także zajmuje się usuwaniem tatuaży oraz makijażu pernamentnego.
+                            Prócz samego zabiegu usuwania z chęcia przedstawi pomysły jak zakryć niechciany tatuaż.
+
+
+                        </p>
                     </article>
                     <article class="col-lg-6 col-xl-4">
                         <img src="{{ url_for('static', filename='images/profile/klaudia.jpg')}}" alt="">
                         <h3>Klaudia Tonak</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Natus aliquam corrupti aut repellat, dolores temporibus. 
-                            Dicta rem, quasi pariatur cumque minus voluptatibus sint 
-                            et aut id error tempora ea. Excepturi.</p>
+                        <p>Managerka studia tatuażu "Pewnie ze Boli Tattoo". 
+                            Na codzień zajmuje się kontaktem z klientemi oraz jest w trakcie
+                            przyuczania się do zawodu tatuatora. Ma już na swoim koncie kilka tatuaży 
+                            oraz posiada roczne doświadczenie w usuwaniu tatuaży.
+
+                        </p>
                     </article>
 
                 </div>

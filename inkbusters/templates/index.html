@@ -6,32 +6,23 @@
 
 {% block main %}
 <div class="container">
-    <section class="row box-photo">
-        <div class="col-md-10 box-photo_photo">
-            <img src="{{ url_for('static', filename='images/other/6.jpg') }}" alt="">
-        </div>
-
-        <article class="box-photo_text uni-box_text">
-            <h2>Nasza oferta</h2>
-            <p></p>
-            <ul>
-                <li>
-                    <img src="" alt="">
-                    <span>Usuwanie tatuażu</span>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <span>Usuwanie makijażu pernamentego</span>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <span>Profesjonalne doradztwo</span>
-                </li>
-            </ul>
-            <a href="{{ url_for('main.pricing') }}"> Zobacz cennik </a>
+    <section class="row first-box">
+        <article class="col-12">
+            <h2 class="col-12">Profesjonaliści w jednym miejscu</h2>
+            <span></span>
+            <p class="col-12"> 
+                <strong> Inkbusters </strong> to więcej niż usuwanie laserowe. To zespół ludzi, 
+                którzy na codzień zajmują się wykonywaniem tatuażu, 
+                lub mają bardzo bliski kontakt ze światem modyfikacji ciała. 
+                Już podczas samego zabiegu usuwania metodą Q-switch mamy możliwość 
+                lepszego dobrania parametrów zabiegu znając od podszewki cały proces 
+                wykonywania tatuażu. 
+            </p>
+            <a href="{{ url_for('main.about') }}"> Dowiedz się więcej </a>
         </article>
     </section>
 </div>
+
 
 <section class="row why-us rotate">
     <div class="container"> 
@@ -90,25 +81,19 @@
 </section>
 
 <!-- second box photo -->
-<div class="container">
-    <section class="row box-photo">
-        <div class="col-md-2"> </div>
-        <div class="col-md-10 box-photo_photo">
-            <img src="{{ url_for('static', filename='images/other/5.jpg')}}" alt="">
+<div class="row second-box">
+    <section class="container">
+        <div class="row">
+            <h2 class="col-12">Nasza Oferta</h2>
+            <div class="col-12">
+                <div class="row">
+                    <span class="col-12 col-md-4"> Usuwanie tatuażu</span>
+                    <span class="col-12 col-md-4"> Usuwanie makijazu pernamentnego</span>
+                    <span class="col-12 col-md-4"> Profesjonalna konsultacja</span>
+                </div>
+            </div>
+            <a class="col-12" href="{{ url_for('main.pricing') }}"> Zobacz cennik</a>
         </div>
-
-        <article class="sc-box-photo_text uni-box_text">
-            <h2>Profesjonaliści w jednym miejscu</h2>
-            <p> 
-                <strong> Inkbusters </strong> to więcej niż usuwanie laserowe. To zespół ludzi, 
-                którzy na codzień zajmują się wykonywaniem tatuażu, 
-                lub mają bardzo bliski kontakt ze światem modyfikacji ciała. 
-                Już podczas samego zabiegu usuwania metodą Q-switch mamy możliwość 
-                lepszego dobrania parametrów zabiegu znając od podszewki cały proces 
-                wykonywania tatuażu. 
-            </p>
-            <a href="{{ url_for('main.pricing') }}"> Dowiedz się więcej </a>
-        </article>
     </section>
 </div>
 

@@ -31,7 +31,7 @@
 }
 
 .team_main{
-    padding-top: 250px;
+    padding-top: 200px;
     padding-bottom: 300px;
 }
 
@@ -42,8 +42,8 @@
 }
 
 .team_main p{
-    line-height: 30px;
-    font-size: 19px;
+    line-height: 25px;
+    font-size: 17px;
     font-family: "Montserrat-Light";
     width: 90%;
 }

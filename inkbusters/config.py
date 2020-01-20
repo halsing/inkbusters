@@ -1,8 +1,11 @@
 import os
 import json
 
-with open('/etc/config.json') as config_file:
-    config = json.load(config_file)
+try:
+    with open('/etc/config.json') as config_file:
+        config = json.load(config_file)
+except IOError:
+    pass
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 

@@ -20,7 +20,7 @@
                             src="{{ url_for('static', filename='images/gallery/' + section|string + '/' + photo + '.jpg' ) }}" 
                             alt="">
                         </div>
-                        <span>
+                        <span class="gallery-box_text">
                             {% if photo == 'before' %}
                                 Przed pierwszym zabiegiem
                             {% elif photo == 'first' %}
