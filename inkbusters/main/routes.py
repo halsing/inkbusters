@@ -3,6 +3,7 @@ from flask import render_template, request, Blueprint, flash, redirect, url_for
 from inkbusters.main.forms import ContactForm
 from inkbusters.main.faq import FAQ
 from inkbusters.email import email_page
+import smtplib
 
 
 main = Blueprint("main", __name__)
@@ -46,7 +47,11 @@ def contact():
                 'email': form.email.data,
                 'content': form.content.data
             }
-            email_page(data)
+            try:
+                email_page(data)
+            except smtplib.SMTPAuthenticationError as e:
+                print(e)
+                
             return redirect(url_for("main.index"))
 
     elif request.method == "GET":
