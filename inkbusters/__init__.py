@@ -1,5 +1,8 @@
 import os
 
+import sentry_sdk
+from sentry_sdk.integrations.flask import FlaskIntegration
+
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -32,6 +35,11 @@ css = Bundle(
 def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
+
+    sentry_sdk.init(
+        dsn="https://808f85a0d46c4a9bae40fdb1e5f1d8f9@sentry.io/2006805",
+        integrations=[FlaskIntegration()]
+    )
 
     # init features
     db.init_app(app)
